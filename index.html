@@ -1,59 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport"content="width=device-width,initial-scale=1.0">
-    <title>Suramya's Portfolio</title>
-    <link rel="stylesheet" href="style.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-    <header class="header">
-        <h1 class="logo" >Portfolio</h1>
-
-        <nav class="navbar">
-            <a href="#">
-                <!-- <?xml version="1.0" encoding="utf-8"?>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <img src="./userSvg.svg" width="24" height="24" alt="aboutimg"> -->
-                    About</a>
-            <a href="#">Skills</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-            
-        </nav>
-        <button class="btnimg"><img src="resume_9522424.png" alt="Resume" class="imgresume"></button>
-
-        <!-- <button class="btn" <img src="D:\Projects\Portfolio\resume_9522424.png" alt="Resume">Resume </button>> -->
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    Suramya's Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   @keyframes fadeIn {
+    from {
+     opacity: 0;
+    }
+    to {
+     opacity: 1;
+    }
+   }
+   .fade-in {
+    animation: fadeIn 2s ease-in-out;
+   }
+  </style>
+ </head>
+ <body class="font-roboto bg-gradient-to-r from-purple-500 to-blue-500 text-gray-100">
+  <!-- Header Section -->
+  <header class="bg-gray-900 shadow-lg py-4">
+   <div class="container mx-auto px-4 flex justify-between items-center">
+    <h1 class="text-3xl font-bold text-white">
+     Portfolio
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="text-white hover:text-gray-300" href="#about">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="text-white hover:text-gray-300" href="#projects">
+        Projects
+       </a>
+      </li>
+      <li>
+       <a class="text-white hover:text-gray-300" href="#skills">
+        Skills
+       </a>
+      </li>
+      <li>
+       <a class="text-white hover:text-gray-300" href="#resume">
+        Resume
+       </a>
+      </li>
+      <li>
+       <a class="text-white hover:text-gray-300" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="py-20 fade-in">
+   <div class="container mx-auto px-4 text-center">
+    <div class="relative inline-block">
+     <img alt="A professional headshot of Suramya, a full stack web developer" class="mx-auto rounded-full border-8 border-white shadow-lg" height="150" src="SURAMYA RAI M.jpeg" width="150"/>
+     <div class="absolute bottom-0 right-0 bg-white rounded-full p-2 shadow-lg">
+      <i class="fas fa-code text-blue-500 text-2xl">
+      </i>
+     </div>
+    </div>
+    <h2 class="text-5xl font-bold mt-6 mb-4 text-white">
+     Hi, I'm Suramya Rai M
+    </h2>
+    <p class="text-2xl mb-8 text-gray-200">
+     A Full Stack Web Developer
+    </p>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-500 to-purple-500 fade-in" id="about">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-4 text-white">
+     About Me
+    </h2>
+    <p class="text-lg mb-4 text-gray-200">
+     I am a passionate full stack web developer with experience in building dynamic and responsive web applications. I specialize in both front-end and back-end development, ensuring seamless integration and functionality.
+    </p>
+    <p class="text-lg text-gray-200">
+     With a strong foundation in HTML, CSS, JavaScript,React.js and various Frontend and back-end technologies, I am dedicated to creating user-friendly and efficient web solutions.
+    </p>
+   </div>
+  </section>
+  <!-- Projects Section -->
+  <section class="py-20 bg-gradient-to-r from-purple-500 to-blue-500 fade-in" id="projects">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-8 text-white">
+     Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <!-- Project 1 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Screenshot of Project 1, a web application with a modern user interface" class="mb-4 rounded" height="200" src="#" width="300"/>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+        Medicare
+      </h3>
+      <p class="text-gray-700 mb-4">
+        it is a web based Medical managment system, which makes the work of the doctor and patient easy and smart with digital prescription generation. front-end-Html,Css,Javascript Back-end-PHP Database-Mysql(xampp server)
+      </p>
+      <a class="text-blue-500 hover:underline" href="#">
+       View Project
+      </a>
+     </div>
+     <!-- Project 2 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg">
+      <img alt="Screenshot of Project 2, a web application with a modern user interface" class="mb-4 rounded" height="200" src="https://storage.googleapis.com/a1aa/image/wf9S1EifL8hSAEuJFMYMbxwyEGYqWzlSmfkf9bM4x5fStZ6fE.jpg" width="300"/>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+        D Shiva Bhat Jewellars
+      </h3>
+      <p class="text-gray-700 mb-4">
+        (Onging project) front-end -React.js Back-end-Node.js Database-MongoDB
+      </p>
+      <a class="text-blue-500 hover:underline" href="#">
+       View Project
+      </a>
+     </div>
+     </div><
+  </section>
+  <!-- Skills Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-500 to-purple-500 fade-in" id="skills">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-8 text-white">
+     Skills
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+     <!-- Skill 1 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <i class="fab fa-html5 text-4xl text-orange-500 mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+       HTML5
+      </h3>
+     </div>
+     <!-- Skill 2 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <i class="fab fa-css3-alt text-4xl text-blue-500 mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+       CSS3
+      </h3>
+     </div>
+     <!-- Skill 3 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <i class="fab fa-js-square text-4xl text-yellow-500 mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+       JavaScript
+      </h3>
+     </div>
+     <!-- Skill 4 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <i class="fab fa-react text-4xl text-blue-500 mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+       React.js
+      </h3>
+     </div>
+     <!-- Skill 5 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <i class="fab fa-node text-4xl text-green-500 mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+       Node.js
+      </h3>
+     </div>
+     <!-- Skill 6 -->
+     <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+      <i class="fas fa-database text-4xl text-gray-700 mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2 text-gray-900">
+       Databases
+      </h3>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Resume Section -->
+  <section class="py-20 bg-gradient-to-r from-purple-500 to-blue-500 fade-in" id="resume">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-8 text-white">
+     Resume
+    </h2>
+    <div class="bg-white p-6 rounded-lg shadow-lg">
+     <h3 class="text-2xl font-bold mb-4 text-gray-900">
+      Suramya's Resume
+     </h3>
+     <p class="text-gray-700 mb-4">
+      Download my resume to learn more about my professional experience and skills.
+     </p>
+     <a class="bg-blue-500 text-white px-4 py-2 rounded-lg" href="Suramya Rai M Resume.pdf" target="_blank">
+      Download Resume
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-500 to-purple-500 fade-in" id="contact">
+   <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-8 text-white">
+     Contact
+    </h2>
+    <form class="bg-white p-6 rounded-lg shadow-lg">
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="name">
+       Name
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="name" placeholder="Your Name" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="email">
+       Email
+      </label>
+      <input class="w-full px-3 py-2 border rounded-lg" id="email" placeholder="Your Email" type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-gray-700 font-bold mb-2" for="message">
+       Message
+      </label>
+      <textarea class="w-full px-3 py-2 border rounded-lg" id="message" placeholder="Your Message" rows="4">
+      </textarea>
+     </div>
+     <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 py-6">
+   <div class="container mx-auto px-4 text-center">
+    <p class="text-gray-300">
+     © 2024 SuramyaRaiM. All rights reserved.
+    </p>
+    <div class="flex justify-center space-x-4 mt-4">
+     <a class="text-gray-300 hover:text-white" href="https://www.linkedin.com/in/suramya-rai-m-7908781b6">
+      <i class="fab fa-linkedin text-2xl">
+      </i>
+     </a>
+     <a class="text-gray-300 hover:text-white" href="https://github.com/suramyaraim">
+      <i class="fab fa-github text-2xl">
+      </i>
+     </a>
     
-
-    </header>
-
-    
-
-    <!-- <img class="imghead" src="https://media.istockphoto.com/id/1085287936/photo/milky-way.webp?b=1&s=170667a&w=0&k=20&c=43m9Y8tP_mxMGXfoZLLtv58CQQ7IJt8HwoK-A9mMWiE=" alt="MyImage" width="100%"> -->
-
-    <body >
-       
-        <div
-                class="main"
-            >
-                <h2 class="Hello">Hello</h2>
-                <p class="intro">
-                    I'm Suramya Rai M
-                </p>
-                
-            </div>
-
-            
-            
-        
-</body>
+    </div>
+   </div>
+  </footer>
+ </body>
 </html>
-

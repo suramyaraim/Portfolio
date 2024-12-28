@@ -1,75 +1,183 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #020202;
+body {
+  background-color: #020202;
 }
 
-header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px ;
-    color: rgb(132, 34, 224);
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  color: rgb(132, 34, 224);
 }
 
-.logo{
-    font-family: "Poppins", sans-serif;
+.logo {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-.navbar{
-    display: flex;
-    gap: 30px;
-    font-family: Poppins;
+.navbar {
+  display: flex;
+  gap: 30px;
+  font-family: Poppins;
 }
 
-a{
-    text-decoration: none;
-    color: #8d04cc;
+a {
+  text-decoration: none;
+  color: #f4eff7;
 }
 
-.btn{
-    background-color: #0c0b0c;
-    font-family:"Poppins", sans-serif;
-      color: #8d04cc;
-      width: 50px;
-      height: 50px;
+.btn {
+  background-color: #0c0b0c;
+  font-family: "Poppins", sans-serif;
+  color: #8d04cc;
+  width: 50px;
+  height: 50px;
 }
 
-.imgresume{
-    width: 50px;
-    height: 50px;
-    background-color: #020202;
-    border-color: #020202;
+.imgresume {
+  width: 50px;
+  height: 50px;
+  background-color: #020202;
 }
 
-.btnimg{
-    border-color: #7c0bbd;
-    background-color: #020202;
+.btnimg {
+  /* border-color: #7c0bbd; */
+  border: none;
+  color: rgb(143, 10, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #020202;
 }
 
-.main{
-    justify-content: flex-start;
-    gap: 2rem;
-    align-items: center;
+.main {
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
 }
-.Hello{
-    display: flex;
-    font-family:"Poppins", sans-serif;
-    color: azure;
-    align-items: center;
+.Hello {
+  display: flex;
+  font-size: 25px;
+  color: #f4eff7;
+  align-items: center;
 }
 
-.intro{
-    display: flex;
-    font-family:"Poppins", sans-serif;
-    color: azure;
-    align-items: center;
-    
+.intro {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: rgb(185, 6, 240);
+  align-items: center;
+  margin-top: 5%;
+  text-decoration: darkmagenta;
+  font-size: 90px;
+}
+
+.content {
+  margin-top: 5%;
+  color: #f4eff7;
+}
+
+.quote {
+  color: #f4eff7;
+  margin-top: 5%;
+}
+.hero {
+  width: 40%;
+  height: 100%;
+  margin-top: 10%;
+  margin-left: 10%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: x-large;
+  font-weight: 300;
+}
+
+a:suru {
+  color: #d804cd;
+  height: 30px;
+  border-width: 10px;
+}
+
+.footercontainer .socialicons {
+  margin-top: 100px;
+}
+
+.socialicons a i {
+  width: 20px;
+  font-size: 30px;
+  margin-left: -80px;
+}
+
+.footercontainer .sub p {
+  color: #a627f0;
+  /* margin-left: -1150px; */
+}
+
+.footercontainer .socialicons a i {
+  margin-left: 2px;
+  width: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  min-height: 100vh;
+  margin-left: 800px;
+  margin-top: -500px;
+  flex-wrap: wrap;
+}
+
+.container imge {
+  width: 100%;
+  height: 100%;
+  /* filter: grayscale(.4); */
+  transition: transform 0.4s ease-in;
+}
+
+.container imge:suru {
+  /* filter: grayscale(0); */
+  transform: scale(1.2);
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.outer-circle {
+  width: 340px;
+  height: 340px;
+  background-color: rgba(77, 77, 77, 0.46);
+  display: flex;
+  justify-content: baseline;
+  border: 5px;
+  border-style: double;
+  border-color: rgb(191, 9, 228);
+  /* align-items: center; */
+  margin: 15px;
+}
+
+.container .sub h3 {
+  color: #ffffff;
+  margin-right: 2086px;
+  margin-top: -400px;
+}
+
+.abt h1 {
+  color: #ffffff;
+  height: 500px;
+}
+
+.contact {
+  color: #ffffff;
 }
